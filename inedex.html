@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Текстовая Игра</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+</head>
+<body>
+  <div id="topbar">
+    <span id="nickname">Ник: Игрок</span>
+    <span id="exp">Опыт: 0</span>
+    <span id="energy">
+      Энергия: <span id="energy-value">100</span>/100
+      <button id="restore-btn" onclick="restoreEnergy()">+</button>
+    </span>
+    <span id="money">
+      Консервы: 0 |
+      Рубли: 0 |
+      Доллары: <span id="dollars-value">10</span> |
+      Гильзы: 0
+    </span>
+  </div>
+
+  <div id="main-container">
+    <div id="mainzone">
+      <h1>Добро пожаловать в игру!</h1>
+      <p>Здесь будут отображаться события, диалоги и действия игрока.</p>
+    </div>
+
+    <div id="rightbar">
+      <div id="location-menu">
+        <h3>Локации</h3>
+        <ul>
+          <li>Локация 1</li>
+          <li>Локация 2</li>
+          <li>Локация 3</li>
+        </ul>
+      </div>
+      <div id="log">
+        <h3>Лог действий</h3>
+        <ul id="log-list">
+          <li>Игра началась...</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="downbar">
+    <button>Меню 1</button>
+    <button>Меню 2</button>
+    <button>Меню 3</button>
+  </div>
+
+  <div id="friends">
+    <p>Список друзей будет здесь</p>
+  </div>
+
+  <div id="character-data" style="display: none;">
+    <div class="stats">
+      <p>Опыт: 0</p>
+      <p>Энергия: 100</p>
+      <p>Таланты: 0</p>
+      <p>Достижения: 0</p>
+    </div>
+    <div class="currency">
+      <p>Консервы: 0</p>
+      <p>Рубли: 0</p>
+      <p>Доллары: 0</p>
+      <p>Гильзы: 0</p>
+    </div>
+    <div class="weapons">
+      <p>Пистолет: нет</p>
+      <p>Автомат: нет</p>
+      <p>Граната: нет</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
